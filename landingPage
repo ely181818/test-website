@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>בניית דפי נחיתה במחירים מוזלים</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+      direction: rtl;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(135deg, #005bea, #00c6fb);
+      color: white;
+      padding: 80px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+    }
+    .cta {
+      background-color: #ffb400;
+      color: #222;
+      padding: 15px 30px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .cta:hover {
+      background-color: #ff9900;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+    .benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .benefit {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #005bea;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0041b8;
+    }
+    footer {
+      margin-top: 60px;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>בניית דפי נחיתה במחירים מוזלים</h1>
+    <p>קבל דף נחיתה מקצועי, ממיר ומעוצב – במחיר לכל כיס!</p>
+    <a href="#form" class="cta">לקבלת הצעת מחיר</a>
+  </header>
+
+  <section>
+    <h2>למה לבחור בנו?</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <h3>✔ עיצוב מודרני ומותאם אישית</h3>
+        <p>דף שמותאם למותג שלך ולמטרה שלך – הרשמות, מכירות או פניות.</p>
+      </div>
+      <div class="benefit">
+        <h3>✔ טעינה מהירה והתאמה לנייד</h3>
+        <p>כל דף מותאם גם לטלפונים, טאבלטים ומחשבים.</p>
+      </div>
+      <div class="benefit">
+        <h3>✔ מחיר משתלם במיוחד</h3>
+        <p>החל מ־299 ש"ח בלבד לדף נחיתה מעוצב ומוכן לפרסום!</p>
+      </div>
+    </div>
+
+    <h2 id="form">השאר פרטים ונחזור אליך עם הצעה</h2>
+    <form onsubmit="event.preventDefault(); alert('תודה! נחזור אליך בהקדם.');">
+      <input type="text" placeholder="שם מלא" required>
+      <input type="tel" placeholder="טלפון" required>
+      <input type="email" placeholder="אימייל">
+      <button type="submit">שלחו לי הצעת מחיר</button>
+    </form>
+  </section>
+
+  <footer>
+    © כל הזכויות שמורות | בניית דפי נחיתה במחירים מוזלים
+  </footer>
+
+</body>
+</html>
