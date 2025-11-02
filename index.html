@@ -45,10 +45,6 @@
       max-width: 700px;
       margin: auto;
     }
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
     .benefits {
       display: flex;
       flex-direction: column;
@@ -98,32 +94,20 @@
 
   <header>
     <h1>בניית דפי נחיתה במחירים מוזלים</h1>
-    <p>קבל דף נחיתה מקצועי, ומעוצב – במחיר לכל כיס!</p>
+    <p>דף נחיתה מקצועי, ממיר ומעוצב – במחיר לכל כיס!</p>
     <a href="#form" class="cta">לקבלת הצעת מחיר</a>
   </header>
 
   <section>
-    <h2>למה לבחור בנו?</h2>
-    <div class="benefits">
-      <div class="benefit">
-        <h3>✔ עיצוב מודרני ומותאם אישית</h3>
-        <p>דף שמותאם למותג שלך ולמטרה שלך – הרשמות, מכירות או פניות.</p>
-      </div>
-      <div class="benefit">
-        <h3>✔ טעינה מהירה והתאמה לנייד</h3>
-        <p>כל דף מותאם גם לטלפונים, טאבלטים ומחשבים.</p>
-      </div>
-      <div class="benefit">
-        <h3>✔ מחיר משתלם במיוחד</h3>
-        <p>החל מ־299 ש"ח בלבד לדף נחיתה מעוצב ומוכן לפרסום!</p>
-      </div>
-    </div>
+    <h2>השאר פרטים ונחזור אליך בהקדם</h2>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <!-- ניתן להוסיף גם שדות נסתרים לשליטה -->
+      <input type="hidden" name="_subject" value="פנייה חדשה מהדף שלך!">
+      <input type="hidden" name="_captcha" value="false">
 
-    <h2 id="form">השאר פרטים ונחזור אליך עם הצעה</h2>
-    <form onsubmit="event.preventDefault(); alert('תודה! נחזור אליך בהקדם.');">
-      <input type="text" placeholder="שם מלא" required>
-      <input type="tel" placeholder="טלפון" required>
-      <input type="email" placeholder="אימייל">
+      <input type="text" name="name" placeholder="שם מלא" required>
+      <input type="tel" name="phone" placeholder="טלפון" required>
+      <input type="email" name="email" placeholder="אימייל">
       <button type="submit">שלחו לי הצעת מחיר</button>
     </form>
   </section>
