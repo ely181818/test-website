@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>בניית דפי נחיתה במחירים מוזלים | דפי נחיתה מקצועיים</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap');
+    body {
+      font-family: "Heebo", sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #f9fbff, #e3f2fd);
+      color: #333;
+      direction: rtl;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #2196f3, #21cbf3);
+      color: white;
+      animation: fadeIn 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      animation: slideUp 1s ease;
+    }
+
+    h2 {
+      color: #1976d2;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: #f1f9ff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background: #2196f3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1976d2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 0.9em;
+      background: #f8f9fa;
+      margin-top: 50px;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 28px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: 0.3s;
+      z-index: 100;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebc59;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      .container { margin: 20px; padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>בניית דפי נחיתה מקצועיים במחירים מוזלים</h1>
+    <p>דף נחיתה שיגדיל לך את הלקוחות – בלי לשבור את הכיס 💡</p>
+  </header>
+
+  <section class="container">
+    <h2>למה לבחור בי?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>עיצוב מודרני</h3>
+        <p>עיצוב נקי, רספונסיבי ומותאם אישית לכל עסק.</p>
+      </div>
+      <div class="feature">
+        <h3>מהירות ביצוע</h3>
+        <p>אספקה מהירה ושירות אישי לכל לקוח.</p>
+      </div>
+      <div class="feature">
+        <h3>מחירים משתלמים</h3>
+        <p>פתרונות מקצועיים בתקציב שמתאים לכל עסק קטן ובינוני.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:40px;">השאירו פרטים ואחזור אליכם בהקדם</h2>
+    <form action="https://formsubmit.co/023319423a82ab81c444f2543fa8433e" method="POST">
+      <input type="hidden" name="_subject" value="פנייה מדף הנחיתה שלך">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="שם מלא" required>
+      <input type="tel" name="phone" placeholder="טלפון" required>
+      <input type="email" name="email" placeholder="אימייל">
+      <textarea name="message" rows="4" placeholder="ספרו לי על הפרויקט שלכם..."></textarea>
+      <button type="submit">שלחו לי הצעה</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 כל הזכויות שמורות | פיתוח אתרים ודפי נחיתה
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/972526589187" target="_blank" class="whatsapp-float" title="שלחו לי הודעה בוואטסאפ">
+    💬
+  </a>
+</body>
+</html>
